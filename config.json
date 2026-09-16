@@ -1,0 +1,19 @@
+{
+    "description":"Add your e-mail account(s) here (address, password/app-password, IMAP/SMTP settings, folder (INBOX, Inbox, or something else), matrix roomID)",
+    "data":[
+        {
+            "email":"",
+            "password":"",
+            "host":"",
+            "folder":"",
+            "roomId":""
+        },
+        {
+            "email":"",
+            "password":"",
+            "host":"",
+            "folder":"",
+            "roomId":""
+        }
+    ]
+}

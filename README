@@ -1,0 +1,25 @@
+This repo is a simple IMAP to Matrix (matrix.org) bot. If you have e-mail accounts you use just for OTP codes, this could be useful for you.
+
+You will need matrix access_token, and to get one simply use this:
+curl -X POST https://{matrix_server}/_matrix/client/v3/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "m.login.password",
+    "identifier": {
+      "type": "m.id.user",
+      "user": "your_username"
+    },
+    "password": "your_password"
+  }'
+
+
+Response will include:
+json
+{
+  "access_token": "syt_xxxxxxxxxx",
+  "device_id": "ABCDEFG",
+  "user_id": "@your_username:example.com",
+  ...
+}
+
+It should work on any OS, but for linux (debian/ubuntu) use autoinstall.sh script. Other OS needs manual installation. MySQL, Python3, and thats all.
